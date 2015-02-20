@@ -759,7 +759,7 @@ namespace dnlib.DotNet {
 		/// <param name="set"><c>true</c> if flags should be set, <c>false</c> if flags should
 		/// be cleared</param>
 		/// <param name="flags">Flags to set or clear</param>
-		void ModifyAttributes(bool set, TypeAttributes flags) {
+		public void ModifyAttributes(bool set, TypeAttributes flags) {
 #if THREAD_SAFE
 			int origVal, newVal;
 			do {
